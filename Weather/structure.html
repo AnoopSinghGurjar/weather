@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video src="background.mp4" autoplay muted loop id="background-vid"></video>
+    <div class="container">
+        <div class="box">
+            <h1>Weather App</h1>
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button onclick="getWeather()">Get Weather</button>
+            </div>
+        </div>
+        <div id="weatherInfo" class="hidden">
+            <h2 id="cityName"></h2>
+            <div id="weatherDetails">
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+        </div>
+    </div>
+    <script src="interaction.js"></script>
+</body>
+</html>
